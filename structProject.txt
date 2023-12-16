@@ -1,0 +1,207 @@
+.
+├── README.md
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── manifest.json
+│   └── robots.txt
+├── src
+│   ├── App.js
+│   ├── App.test.js
+│   ├── assets
+│   │   ├── fonts
+│   │   │   ├── fa-brands-400.eot
+│   │   │   ├── fa-brands-400.svg
+│   │   │   ├── fa-brands-400.ttf
+│   │   │   ├── fa-brands-400.woff
+│   │   │   ├── fa-brands-400.woff2
+│   │   │   ├── fa-regular-400.eot
+│   │   │   ├── fa-regular-400.svg
+│   │   │   ├── fa-regular-400.ttf
+│   │   │   ├── fa-regular-400.woff
+│   │   │   ├── fa-regular-400.woff2
+│   │   │   ├── fa-solid-900.eot
+│   │   │   ├── fa-solid-900.svg
+│   │   │   ├── fa-solid-900.ttf
+│   │   │   ├── fa-solid-900.woff
+│   │   │   ├── fa-solid-900.woff2
+│   │   │   ├── materialdesignicons-webfont.eot
+│   │   │   ├── materialdesignicons-webfont.ttf
+│   │   │   ├── materialdesignicons-webfont.woff
+│   │   │   ├── materialdesignicons-webfont.woff2
+│   │   │   ├── remixicon.eot
+│   │   │   ├── remixicon.svg
+│   │   │   ├── remixicon.ttf
+│   │   │   ├── remixicon.woff
+│   │   │   └── remixicon.woff2
+│   │   ├── images
+│   │   │   ├── favicon.ico
+│   │   │   ├── flags
+│   │   │   │   ├── french.jpg
+│   │   │   │   ├── germany.jpg
+│   │   │   │   ├── italy.jpg
+│   │   │   │   ├── russia.jpg
+│   │   │   │   ├── select2
+│   │   │   │   │   ├── ak.png
+│   │   │   │   │   ├── ca.png
+│   │   │   │   │   ├── hi.png
+│   │   │   │   │   ├── nv.png
+│   │   │   │   │   ├── or.png
+│   │   │   │   │   └── wa.png
+│   │   │   │   ├── spain.jpg
+│   │   │   │   └── us.jpg
+│   │   │   ├── logo-dark.png
+│   │   │   ├── logo-light.png
+│   │   │   ├── logo.svg
+│   │   │   ├── small
+│   │   │   │   ├── admin_v1.0.zip
+│   │   │   │   ├── img-1.jpg
+│   │   │   │   ├── img-2.jpg
+│   │   │   │   ├── img-3.jpg
+│   │   │   │   ├── img-4.jpg
+│   │   │   │   ├── img-5.jpg
+│   │   │   │   ├── img-6.jpg
+│   │   │   │   └── img-7.jpg
+│   │   │   └── users
+│   │   │       ├── avatar-1.jpg
+│   │   │       ├── avatar-2.jpg
+│   │   │       ├── avatar-3.jpg
+│   │   │       ├── avatar-4.jpg
+│   │   │       ├── avatar-5.jpg
+│   │   │       ├── avatar-6.jpg
+│   │   │       ├── avatar-7.jpg
+│   │   │       └── avatar-8.jpg
+│   │   └── scss
+│   │       ├── _variables-dark.scss
+│   │       ├── _variables.scss
+│   │       ├── app.scss
+│   │       ├── bootstrap.scss
+│   │       ├── custom
+│   │       │   ├── components
+│   │       │   │   ├── _accordion.scss
+│   │       │   │   ├── _avatar.scss
+│   │       │   │   ├── _backgrounds.scss
+│   │       │   │   ├── _badge.scss
+│   │       │   │   ├── _breadcrumb.scss
+│   │       │   │   ├── _buttons.scss
+│   │       │   │   ├── _card.scss
+│   │       │   │   ├── _dropdown.scss
+│   │       │   │   ├── _forms.scss
+│   │       │   │   ├── _helper.scss
+│   │       │   │   ├── _nav.scss
+│   │       │   │   ├── _pagination.scss
+│   │       │   │   ├── _progress.scss
+│   │       │   │   ├── _reboot.scss
+│   │       │   │   ├── _root.scss
+│   │       │   │   ├── _table.scss
+│   │       │   │   └── _waves.scss
+│   │       │   ├── fonts
+│   │       │   │   └── _fonts.scss
+│   │       │   ├── pages
+│   │       │   │   ├── _authentication.scss
+│   │       │   │   ├── _chat-leftsidebar.scss
+│   │       │   │   ├── _user-chat.scss
+│   │       │   │   └── _user-profile-details.scss
+│   │       │   ├── plugins
+│   │       │   │   ├── _custom-scrollbar.scss
+│   │       │   │   ├── _icons.scss
+│   │       │   │   └── icons
+│   │       │   │       ├── _fontawesome-all.scss
+│   │       │   │       ├── _materialdesignicons.scss
+│   │       │   │       └── _remixicon.scss
+│   │       │   ├── rtl
+│   │       │   │   ├── _bootstrap-rtl.scss
+│   │       │   │   ├── _components-rtl.scss
+│   │       │   │   ├── _float-rtl.scss
+│   │       │   │   ├── _general-rtl.scss
+│   │       │   │   ├── _pages-rtl.scss
+│   │       │   │   ├── _spacing-rtl.scss
+│   │       │   │   └── _text-rtl.scss
+│   │       │   └── structure
+│   │       │       └── _sidemenu.scss
+│   │       ├── icons.scss
+│   │       └── themes.scss
+│   ├── components
+│   │   ├── AttachedFiles.js
+│   │   ├── CustomCollapse.js
+│   │   ├── SelectContact.js
+│   │   ├── UserProfileSidebar.js
+│   │   └── withRouter.js
+│   ├── config.js
+│   ├── helpers
+│   │   ├── apiClient.js
+│   │   ├── authUtils.js
+│   │   ├── fake-backend.js
+│   │   ├── firebase.js
+│   │   └── index.js
+│   ├── i18n.js
+│   ├── index.js
+│   ├── layouts
+│   │   ├── AuthLayout
+│   │   │   ├── LeftSidebarMenu.js
+│   │   │   └── index.js
+│   │   └── NonAuth.js
+│   ├── locales
+│   │   ├── en
+│   │   │   └── translation.json
+│   │   ├── gr
+│   │   │   └── translation.json
+│   │   ├── it
+│   │   │   └── translation.json
+│   │   ├── rs
+│   │   │   └── translation.json
+│   │   └── sp
+│   │       └── translation.json
+│   ├── pages
+│   │   ├── Auth
+│   │   │   ├── ForgetPassword.js
+│   │   │   ├── LockScreen.js
+│   │   │   ├── Login.js
+│   │   │   ├── Logout.js
+│   │   │   └── Register.js
+│   │   ├── StarterPage
+│   │   │   └── index.js
+│   │   └── dashboard
+│   │       ├── ChatLeftSidebar.js
+│   │       ├── Tabs
+│   │       │   ├── Chats.js
+│   │       │   ├── Contacts.js
+│   │       │   ├── Groups.js
+│   │       │   ├── OnlineUsers.js
+│   │       │   ├── Profile.js
+│   │       │   └── Settings.js
+│   │       ├── UserChat
+│   │       │   ├── ChatInput.js
+│   │       │   ├── FileList.js
+│   │       │   ├── ImageList.js
+│   │       │   ├── UserHead.js
+│   │       │   └── index.js
+│   │       └── index.js
+│   ├── redux
+│   │   ├── actions.js
+│   │   ├── auth
+│   │   │   ├── actions.js
+│   │   │   ├── constants.js
+│   │   │   ├── reducers.js
+│   │   │   └── saga.js
+│   │   ├── chat
+│   │   │   ├── actions.js
+│   │   │   ├── constants.js
+│   │   │   └── reducers.js
+│   │   ├── layout
+│   │   │   ├── actions.js
+│   │   │   ├── constants.js
+│   │   │   ├── reducer.js
+│   │   │   └── saga.js
+│   │   ├── reducers.js
+│   │   ├── sagas.js
+│   │   └── store.js
+│   ├── routes
+│   │   ├── index.js
+│   │   └── routes.js
+│   ├── serviceWorker.js
+│   └── setupTests.js
+├── structProject.txt
+└── yarn.lock
+
+7874 directories, 50581 files
