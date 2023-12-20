@@ -1,5 +1,6 @@
 import React from "react";
 import { Navigate } from "react-router-dom";
+import NewsFeed from "../pages/NewsFeed";
 
 // lazy load all the views
 const Dashboard = React.lazy(() => import("../pages/dashboard/index"));
@@ -16,7 +17,6 @@ const LockScreen = React.lazy(() => import("../pages/Auth/LockScreen"));
 const authProtectedRoutes = [
   { path: "/dashboard", component: <Dashboard /> },
   { path: "/pages-starter", component: <StarterPage /> },
-
     // this route should be at the end of all other routes
   // eslint-disable-next-line react/display-name
   {
@@ -27,6 +27,11 @@ const authProtectedRoutes = [
   { path: "*", component: <Navigate to="/dashboard" /> },
 ];
 
+const authNoTabRoutes = [
+  {path:"/newsfeed",component:<NewsFeed/>},
+];
+
+
 const publicRoutes = [
   { path: "/logout", component: <Logout /> },
   { path: "/login", component: <Login /> },
@@ -35,4 +40,4 @@ const publicRoutes = [
   { path: "/lock-screen", component: <LockScreen />}
 ];
 
-export { authProtectedRoutes, publicRoutes };
+export { authProtectedRoutes, publicRoutes,authNoTabRoutes };

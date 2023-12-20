@@ -25,7 +25,7 @@ File: Main Css File
 @import "custom/components/helper";
 @import "custom/components/accordion";
 @import "custom/components/forms";
-
+@import "custom/components/newsfeed";
 
 // Plugins
 @import "custom/plugins/custom-scrollbar";
@@ -38,4 +38,4 @@ File: Main Css File
 @import "custom/pages/user-chat";
 @import "custom/pages/user-profile-details";
 @import "custom/pages/authentication";
-
+@import "custom/pages/newsfeed";
