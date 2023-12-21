@@ -1,6 +1,12 @@
 import React from "react";
 import TagFacesIcon from "@mui/icons-material/TagFaces";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+import Social from "../../assets/images/socialFi.jpg"
+import BtnLike from "./BtnLike";
+import BtnCommon from "./BtnCommon";
+import ForumIcon from '@mui/icons-material/Forum';
+import TurnedInIcon from '@mui/icons-material/TurnedIn';
+import ReplyIcon from '@mui/icons-material/Reply';
 function NewsItem() {
   return (
     <div className="item-news">
@@ -31,6 +37,20 @@ function NewsItem() {
       <p className="hastag">
         #hastag #dhhdh
       </p>
+
+      <div className="main-image">
+          <img src={Social} alt="Social"/>
+      </div>
+
+      <div className="btn">
+          <BtnLike className="btnLike"/>
+          <BtnCommon className="btn-common" ComponentIcon={ForumIcon} text="Comments"/>
+          <BtnCommon className="btn-common" ComponentIcon={TurnedInIcon} text="2.3K Saved"/>
+          <BtnCommon className="btn-common" ComponentIcon={ReplyIcon} text="1K Share"/>
+          
+      </div>
+
+
     </div>
   );
 }
