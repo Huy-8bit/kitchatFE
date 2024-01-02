@@ -141,37 +141,37 @@
   }
 }
 
-.text-create-post{
+.text-create-post {
   text-align: center;
   font-weight: 600;
   font-size: 20px;
   color: black;
 }
 
-.input-create-post{
+.input-create-post {
   height: 100px;
 }
 
 /* Import Google Font - Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-body{
+body {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: linear-gradient(#00C6FF, #0078FF);
+  background: linear-gradient(#00c6ff, #0078ff);
 }
-::selection{
+::selection {
   color: #fff;
   background: #1a81ff;
 }
-.container{
+.container {
   width: 500px;
   height: 480px;
   overflow: hidden;
@@ -180,53 +180,53 @@ body{
   transition: height 0.2s ease;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
 }
-.container.active{
+.container.active {
   height: 590px;
 }
-.container .wrapper{
+.container .wrapper {
   width: 1000px;
   display: flex;
 }
-.container .wrapper section{
+.container .wrapper section {
   width: 500px;
   background: #fff;
 }
-.container img{
+.container img {
   cursor: pointer;
 }
-.container .post{
+.container .post {
   transition: margin-left 0.18s ease;
 }
-.container.active .post{
+.container.active .post {
   margin-left: -500px;
 }
-.post header{
+.post header {
   font-size: 22px;
   font-weight: 600;
   padding: 17px 0;
   text-align: center;
   border-bottom: 1px solid #bfbfbf;
 }
-.post form{
+.post form {
   margin: 20px 25px;
 }
 .post form .content,
-.audience .list li .column{
+.audience .list li .column {
   display: flex;
   align-items: center;
 }
-.post form .content img{
+.post form .content img {
   cursor: default;
   max-width: 52px;
 }
-.post form .content .details{
+.post form .content .details {
   margin: -3px 0 0 12px;
 }
-form .content .details p{
+form .content .details p {
   font-size: 17px;
   font-weight: 500;
 }
-.content .details .privacy{
+.content .details .privacy {
   display: flex;
   height: 25px;
   cursor: pointer;
@@ -236,113 +236,113 @@ form .content .details p{
   border-radius: 5px;
   align-items: center;
   max-width: 98px;
-  background: #E4E6EB;
+  background: #e4e6eb;
   justify-content: space-between;
 }
-.details .privacy span{
+.details .privacy span {
   font-size: 13px;
   margin-top: 1px;
   font-weight: 500;
 }
-.details .privacy i:last-child{
+.details .privacy i:last-child {
   font-size: 13px;
   margin-left: 1px;
 }
-form :where(textarea, button){
+form :where(textarea, button) {
   width: 100%;
   outline: none;
   border: none;
 }
-form textarea{
+form textarea {
   resize: none;
   font-size: 18px;
   margin-top: 30px;
   min-height: 100px;
 }
-form textarea::placeholder{
+form textarea::placeholder {
   color: #858585;
 }
-form textarea:focus::placeholder{
+form textarea:focus::placeholder {
   color: #b3b3b3;
 }
-form :where(.theme-emoji, .options){
+form :where(.theme-emoji, .options) {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.theme-emoji img:last-child{
+.theme-emoji img:last-child {
   max-width: 24px;
 }
-form .options{
+form .options {
   height: 57px;
   margin: 15px 0;
   padding: 0 15px;
   border-radius: 7px;
-  border: 1px solid #B9B9B9;
+  border: 1px solid #b9b9b9;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 form .options :where(.list, li),
-.audience :where(.arrow-back, .icon, li .radio){
+.audience :where(.arrow-back, .icon, li .radio) {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-form .options p{
+form .options p {
   color: #595959;
   font-size: 15px;
   font-weight: 500;
   cursor: default;
 }
-form .options .list{
+form .options .list {
   list-style: none;
 }
-.options .list li{
+.options .list li {
   height: 42px;
   width: 42px;
   margin: 0 -1px;
   cursor: pointer;
   border-radius: 50%;
 }
-.options .list li:hover{
+.options .list li:hover {
   background: #f0f1f4;
 }
-.options .list li img{
+.options .list li img {
   width: 23px;
 }
-form button{
+form button {
   height: 53px;
   color: #fff;
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
-  color: #BCC0C4;
+  color: #bcc0c4;
   cursor: no-drop;
   border-radius: 7px;
   background: #e2e5e9;
   transition: all 0.3s ease;
 }
-form textarea:valid ~ button{
+form textarea:valid ~ button {
   color: #fff;
   cursor: pointer;
-  background: #4599FF;
+  background: #4599ff;
 }
-form textarea:valid ~ button:hover{
+form textarea:valid ~ button:hover {
   background: #1a81ff;
 }
-.container .audience{
+.container .audience {
   opacity: 0;
   transition: opacity 0.12s ease;
 }
-.container.active .audience{
+.container.active .audience {
   opacity: 1;
 }
-.audience header{
+.audience header {
   padding: 17px 0;
   text-align: center;
   position: relative;
   border-bottom: 1px solid #bfbfbf;
 }
-.audience header .arrow-back{
+.audience header .arrow-back {
   position: absolute;
   left: 25px;
   width: 35px;
@@ -351,28 +351,28 @@ form textarea:valid ~ button:hover{
   font-size: 15px;
   color: #747474;
   border-radius: 50%;
-  background: #E4E6EB;
+  background: #e4e6eb;
 }
-.audience header p{
+.audience header p {
   font-size: 22px;
   font-weight: 600;
 }
-.audience .content{
+.audience .content {
   margin: 20px 25px 0;
 }
-.audience .content p{
+.audience .content p {
   font-size: 17px;
   font-weight: 500;
 }
-.audience .content span{
+.audience .content span {
   font-size: 14px;
-  color: #65676B;
+  color: #65676b;
 }
-.audience .list{
+.audience .list {
   margin: 15px 16px 20px;
   list-style: none;
 }
-.audience .list li{
+.audience .list li {
   display: flex;
   cursor: pointer;
   margin-bottom: 5px;
@@ -382,49 +382,551 @@ form textarea:valid ~ button:hover{
   justify-content: space-between;
 }
 .list li.active,
-.audience .list li.active:hover{
-  background: #E5F1FF;
+.audience .list li.active:hover {
+  background: #e5f1ff;
 }
-.audience .list li:hover{
+.audience .list li:hover {
   background: #f0f1f4;
 }
-.audience .list li .column .icon{
+.audience .list li .column .icon {
   height: 50px;
   width: 50px;
   color: #333;
   font-size: 23px;
   border-radius: 50%;
-  background: #E4E6EB;
+  background: #e4e6eb;
 }
-.audience .list li.active .column .icon{
+.audience .list li.active .column .icon {
   background: #cce4ff;
 }
-.audience .list li .column .details{
+.audience .list li .column .details {
   margin-left: 15px;
 }
-.list li .column .details p{
+.list li .column .details p {
   font-weight: 500;
 }
-.list li .column .details span{
+.list li .column .details span {
   font-size: 14px;
-  color: #65676B;
+  color: #65676b;
 }
-.list li .radio{
+.list li .radio {
   height: 20px;
   width: 20px;
   border-radius: 50%;
   position: relative;
   border: 1px solid #707070;
 }
-.list li.active .radio{
-  border: 2px solid #4599FF;
+.list li.active .radio {
+  border: 2px solid #4599ff;
 }
-.list li .radio::before{
+.list li .radio::before {
   content: "";
   width: 12px;
   height: 12px;
   border-radius: inherit;
 }
-.list li.active .radio::before{
-  background: #4599FF;
+.list li.active .radio::before {
+  background: #4599ff;
+}
+
+$color_1: #ffffff80;
+$color_2: #ffffff;
+$font-family_1: "Inter-Regular", Helvetica;
+$font-family_2: "Inter-SemiBold", Helvetica;
+$background-color_1: #1e1f23;
+$background-color_2: #fafafa0d;
+$background-color_3: #ffffff0d;
+$background-color_4: #316aff;
+$background-color_5: #ff303d;
+$background-color_6: #d9d9d9;
+$border-color_1: #292b31;
+$border-color_2: #1e1f23;
+
+.frame {
+  align-items: flex-start;
+  background-color: $background-color_1;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: $border-color_1;
+  display: inline-flex;
+  gap: 32px;
+  padding: 28px 32px;
+  position: relative;
+  .div {
+    align-items: center;
+    background-color: $background-color_2;
+    border-radius: 12px;
+    display: flex;
+    gap: 12px;
+    padding: 12px;
+    position: relative;
+    width: 780px;
+  }
+  .icon-instance-node {
+    color: $color_2;
+    height: 24px !important;
+    position: relative !important;
+    width: 24px !important;
+  }
+  .text-wrapper {
+    color: $color_1;
+    flex: 1;
+    font-family: $font-family_1;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+  }
+  .div-2 {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 32px;
+    position: relative;
+  }
+  .div-3 {
+    align-items: flex-start;
+    background-color: $background-color_3;
+    border-radius: 100px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    padding: 4px;
+    position: relative;
+  }
+  .vuesax-bulk-moon-wrapper {
+    color: $color_2;
+    align-items: center;
+    background-color: $background-color_4;
+    border-radius: 100px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+  }
+  .icon-instance-node-2 {
+    height: 20px !important;
+    position: relative !important;
+    width: 20px !important;
+  }
+  .vuesax-bulk-sun-wrapper {
+    align-items: center;
+    border-radius: 100px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+    color: $color_2;
+  }
+  .div-4 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 8px;
+    position: relative;
+  }
+  .div-5 {
+    align-items: flex-start;
+    background-color: $background-color_3;
+    border-radius: 100px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+  }
+  .div-wrapper {
+    align-items: center;
+    background-color: $background-color_5;
+    border: 1px solid;
+    border-color: $border-color_2;
+    border-radius: 100px;
+    display: flex;
+    gap: 10px;
+    height: 23px;
+    justify-content: center;
+    left: 27px;
+    padding: 8px;
+    position: absolute;
+    top: -11px;
+    width: 23px;
+  }
+  .text-wrapper-2 {
+    color: $color_2;
+    font-family: $font-family_2;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: -0.1px;
+    line-height: normal;
+    margin-bottom: -1.5px;
+    margin-top: -3.5px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  .rectangle {
+    background-color: $background-color_6;
+    border-radius: 100px;
+    height: 44px;
+    position: relative;
+    width: 44px;
+  }
+}
+
+$color_1: #ffffff;
+$color_2: #757575;
+$color_3: #316aff;
+$background-color_1: #d9d9d9;
+$background-color_2: #316aff4c;
+
+.NewFriend {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  position: relative;
+  .ellipse {
+    background-color: $background-color_1;
+    border-radius: 19px;
+    height: 38px;
+    position: relative;
+    width: 38px;
+  }
+  .div {
+    align-items: flex-start;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 8px;
+    position: relative;
+  }
+  .text-wrapper {
+    align-self: stretch;
+    color: $color_1;
+    font-family: $font-family_1;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.16px;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+  }
+  .text-wrapper-2 {
+    align-self: stretch;
+    color: $color_2;
+    font-family: $font-family_1;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.14px;
+    line-height: normal;
+    position: relative;
+  }
+  .div-2 {
+    align-items: center;
+    background-color: $background-color_2;
+    border-radius: 100px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 4px;
+    padding: 8px 10px;
+    position: relative;
+  }
+  .vuesax-bulk-user-add {
+    height: 14px !important;
+    position: relative !important;
+    width: 14px !important;
+  }
+  .text-wrapper-3 {
+    color: $color_3;
+    font-family: $font-family_2;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: -0.12px;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+  }
+}
+
+$background-color_2: #ff303d;
+
+.Friend {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  position: relative;
+  .ellipse {
+    background-color: $background-color_1;
+    border-radius: 19px;
+    height: 38px;
+    position: relative;
+    width: 38px;
+  }
+  .div {
+    align-items: flex-start;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 8px;
+    position: relative;
+  }
+  .text-wrapper {
+    align-self: stretch;
+    color: $color_1;
+    font-family: $font-family_1;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.16px;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+  }
+  .text-wrapper-2 {
+    align-self: stretch;
+    color: $color_2;
+    font-family: $font-family_1;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.14px;
+    line-height: normal;
+    position: relative;
+  }
+  .div-wrapper {
+    align-items: center;
+    background-color: $background-color_2;
+    border-radius: 100px;
+    display: flex;
+    gap: 10px;
+    height: 23px;
+    justify-content: center;
+    padding: 8px;
+    position: relative;
+    width: 23px;
+  }
+  .text-wrapper-3 {
+    color: $color_1;
+    font-family: $font-family_2;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: -0.1px;
+    line-height: normal;
+    margin-bottom: -1.5px;
+    margin-top: -3.5px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+}
+
+$color_1: #ffffff80;
+$color_2: #ffffff;
+$color_3: #757575;
+$color_4: #316aff;
+$color_5: #0fbf00;
+$font-family_1: "SF Pro Display-Regular", Helvetica;
+$font-family_2: "Inter-Regular", Helvetica;
+$font-family_3: "Inter-Medium", Helvetica;
+$font-family_4: "Inter-SemiBold", Helvetica;
+$background-color_1: #1e1f23;
+$background-color_2: #d9d9d9;
+$background-color_3: #316aff4c;
+$background-color_4: #ffffff4c;
+$background-color_5: #ff303d;
+$border-color_1: #292b31;
+
+.RightBar {
+  align-items: flex-start;
+  background-color: $background-color_1;
+  border: 1px solid;
+  border-color: $border-color_1;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  height: 965px;
+  padding: 24px 28px;
+  position: relative;
+  width: 324px;
+  .div {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 32px;
+    position: relative;
+    width: 100%;
+  }
+  .text-wrapper {
+    align-self: stretch;
+    color: $color_1;
+    font-family: $font-family_1;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+  }
+  .div-2 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+    width: 100%;
+  }
+  .div-3 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 16px;
+    position: relative;
+    width: 100%;
+  }
+  .ellipse {
+    background-color: $background-color_2;
+    border-radius: 19px;
+    height: 38px;
+    position: relative;
+    width: 38px;
+  }
+  .div-4 {
+    align-items: flex-start;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 8px;
+    position: relative;
+  }
+  .text-wrapper-2 {
+    align-self: stretch;
+    color: $color_2;
+    font-family: $font-family_2;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.16px;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+  }
+  .text-wrapper-3 {
+    align-self: stretch;
+    color: $color_3;
+    font-family: $font-family_2;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.14px;
+    line-height: normal;
+    position: relative;
+  }
+  .div-5 {
+    align-items: center;
+    background-color: $background-color_3;
+    border-radius: 100px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 4px;
+    padding: 8px 10px;
+    position: relative;
+  }
+  .icon-instance-node {
+    height: 14px !important;
+    position: relative !important;
+    width: 14px !important;
+  }
+  .text-wrapper-4 {
+    color: $color_4;
+    font-family: $font-family_3;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: -0.12px;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+  }
+  .div-6 {
+    align-items: center;
+    background-color: $background-color_4;
+    border-radius: 100px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 4px;
+    padding: 8px 10px;
+    position: relative;
+  }
+  .text-wrapper-5 {
+    color: $color_2;
+    font-family: $font-family_3;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: -0.12px;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+  }
+  .vector {
+    align-self: stretch;
+    height: 1px;
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+  }
+  .text-wrapper-6 {
+    align-self: stretch;
+    color: $color_1;
+    font-family: $font-family_1;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+  }
+  .div-wrapper {
+    align-items: center;
+    background-color: $background-color_5;
+    border-radius: 100px;
+    display: flex;
+    gap: 10px;
+    height: 23px;
+    justify-content: center;
+    padding: 8px;
+    position: relative;
+    width: 23px;
+  }
+  .text-wrapper-7 {
+    color: $color_2;
+    font-family: $font-family_4;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: -0.1px;
+    line-height: normal;
+    margin-bottom: -1.5px;
+    margin-top: -3.5px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  .text-wrapper-8 {
+    align-self: stretch;
+    color: $color_5;
+    font-family: $font-family_2;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.14px;
+    line-height: normal;
+    position: relative;
+  }
 }
