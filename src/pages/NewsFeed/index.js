@@ -7,12 +7,19 @@ import LeftBar from "../../components/NewsFeed/LeftBar";
 
 function NewsFeed() {
   return (
+    <div className="container-newsfeed">
+      <LeftBar />
+
     <div className="newsfeed">
       <NavBar />
-      <PostNews />
-      <LeftBar/>
-      <NewsItem />
-      <RightBar />
+      <div className="wrapper">
+        <div className="box">
+          <PostNews />
+          <NewsItem />
+        </div>
+        <RightBar />
+      </div>
+    </div>
     </div>
   );
 }

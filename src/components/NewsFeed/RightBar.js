@@ -21,6 +21,7 @@ function RightBar() {
         alignItems: "flex-start",
         gap: 28,
         display: "inline-flex",
+        margin: 20,
       }}
     >
       <div
