@@ -14,15 +14,14 @@ function NewFriend() {
         display: "inline-flex",
       }}
     >
-      <div
-        className="Ellipse1636"
-        style={{
-          width: 38,
-          height: 38,
-          background: "#D9D9D9",
-          borderRadius: 9999,
-        }}
-      />
+      <div className="logo-shortcut">
+        <div className="main">
+          <img
+            src="https://www.tailorbrands.com/wp-content/uploads/2020/07/twitter-logo.jpg"
+            alt="Twitter"
+          />
+        </div>
+      </div>
       <div
         className="Frame427321115"
         style={{

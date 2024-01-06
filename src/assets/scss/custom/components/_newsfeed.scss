@@ -958,7 +958,6 @@ $border-color_1: #292b31;
     overflow-y: hidden;
     border: none;
     background-color: rgb(102, 102, 102);
-
   }
 
   .send-comment {
@@ -1096,18 +1095,16 @@ $border-color_1: #292b31;
       top: -10px;
       left: -10px;
     }
-
-    
   }
-  .text-short{
+  .text-short {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    p{
+    p {
       margin: 0;
     }
-    .title{
+    .title {
       color: white;
     }
   }
@@ -1115,4 +1112,31 @@ $border-color_1: #292b31;
 
 body {
   overflow-x: hidden;
+}
+.logo-shortcut {
+  width: 50px;
+  border-radius: 50%;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  .main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+  }
+  .noti {
+    background-color: red;
+    color: white;
+    display: inline;
+    padding: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+  }
 }
