@@ -8,9 +8,13 @@ function NewsFeed() {
   return (
     <div className="newsfeed">
       <NavBar />
-      <PostNews />
-      <NewsItem />
-      <RightBar />
+      <div className="wrapper">
+        <div className="box">
+          <PostNews />
+          <NewsItem />
+        </div>
+        <RightBar />
+      </div>
     </div>
   );
 }
