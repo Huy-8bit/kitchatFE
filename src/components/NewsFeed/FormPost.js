@@ -1,7 +1,4 @@
-import * as React from "react";
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import Logo from "../../assets/images/users/avatar-1.jpg";
 import Emoji from "../../assets/images/emoji.png";
@@ -13,9 +10,8 @@ import Location from "../../assets/images/location.png";
 import PeopleIcon from "@mui/icons-material/People";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
-import PublicIcon from '@mui/icons-material/Public';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { useState } from "react";
+import Audience from "./Audience";
 const style = {
   position: "absolute",
   top: "50%",
@@ -95,36 +91,7 @@ export default function FormPost(props) {
                   <button>Post</button>
                 </form>
               </section>
-              <section className="audience">
-                <header>
-                  <div onClick={()=>setIsAudience(false)} className="arrow-back">
-                   <ArrowBackIcon/>
-                  </div>
-                  <p>Select Audience</p>
-                </header>
-                <div className="content">
-                  <p>Who can see your post?</p>
-                  <span>
-                    Your post will show up in News Feed, on your profile and in
-                    search results.
-                  </span>
-                </div>
-                <ul className="list">
-                  <li>
-                    <div className="column">
-                      <div className="icon">
-                        <PublicIcon/>
-                      </div>
-                      <div className="details">
-                        <p>Public</p>
-                        <span>Anyone on or off Facebook</span>
-                      </div>
-                    </div>
-                    <div className="radio"></div>
-                  </li>
-                  {/* Add similar li elements for other options */}
-                </ul>
-              </section>
+             <Audience setIsAudience={setIsAudience}/>
             </div>
           </div>
         </Box>
